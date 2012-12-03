@@ -1,0 +1,168 @@
+#news div#container {
+	overflow: hidden;
+}
+#news div.content {
+	display: none;
+	clear: both;
+}
+#news div.content a, div.navigation a {
+	text-decoration: none;
+}
+#news div.content a:hover, div.content a:active {
+	text-decoration: underline;
+}
+#news div.controls {
+	margin-top: 5px;
+	height: 23px;
+}
+#news div.controls a {
+	padding: 5px;
+}
+#news div.ss-controls {
+	float: left;
+}
+#news div.nav-controls {
+	float: right;
+}
+#news div.slideshow-container {
+	position: relative;
+	clear: both;
+}
+#news div.loader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: url('images/loader.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+}
+#news div.slideshow span.image-wrapper {
+	display: block;
+	position: absolute;
+	top: 30px;
+	left: 0;
+}
+#news div.slideshow a.advance-link {
+	display: block;
+	text-align: center;
+}
+#news div.slideshow a.advance-link:hover,
+#news div.slideshow a.advance-link:active,
+#news div.slideshow a.advance-link:visited {
+	text-decoration: none;
+}
+#news div.slideshow a.advance-link:focus {
+	outline: none;
+}
+#news div.slideshow img {
+	/* vertical-align: middle; */
+	border: 1px solid #ccc;
+}
+#news div.caption-container {
+	position: relative;
+	margin-top: 30px;
+}
+#news span.image-caption {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#news div.caption {
+	padding: 0 12px;
+}
+#news div.download {
+	padding-top:12px;
+}
+#news div.navigation a.pageLink {
+	display: block;
+	position: relative;
+	float: left;
+	margin: 2px;
+	width: 16px;
+	background-position:center center;
+	background-repeat:no-repeat;
+}
+#news div.navigation a.pageLink:focus {
+	outline: none;
+}
+#news div.navigation a.prev {
+	background-image: url(images/prevPageArrow.gif);
+}
+#news div.navigation a.next {
+	background-image: url(images/nextPageArrow.gif);
+}
+#news ul.thumbs {
+	position: relative;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+#news ul.thumbs li {
+	float: left;
+	padding: 0;
+	margin: 2px;
+	list-style: none;
+}
+#news a.thumb {
+	padding: 1px;
+	display: block;
+}
+#news ul.thumbs li.selected a.thumb {
+	background: #000;
+}
+#news a.thumb:focus {
+	outline: none;
+}
+#news ul.thumbs img {
+	border: none;
+	display: block;
+}
+#news div.pagination {
+	padding: 2px 0 2px 3px;
+}
+#news div.pagination a, 
+#news div.pagination span.current, 
+#news div.pagination span.ellipsis {
+	position: relative;
+	display: block;
+	float: left;
+	margin-right: 2px;
+	padding: 4px 7px 2px 7px;
+	border: 1px solid #ccc;
+}
+#news div.pagination a:hover {
+	background-color: #eee;
+	text-decoration: none;
+}
+#news div.pagination span.current {
+	font-weight: bold;
+	background-color: #000;
+	border-color: #000;
+	color: #fff;
+}
+#news div.pagination span.ellipsis {
+	border: none;
+	padding: 5px 0 3px 2px;
+}
+
+#news div.gallery-gutter {
+	clear: both;
+	padding-bottom: 20px;
+}
+#news #folders {
+	float: left;
+	position: relative;
+	left: 50%;
+}
+#news #folders ul.thumbs {
+    position: relative;
+	left: -50%;
+}
+#news #folders ul.thumbs li {
+	position: relative;
+	display: block;
+	float: left;
+	margin: 10px 20px;
+	text-align: center;
+}

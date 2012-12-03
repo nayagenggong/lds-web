@@ -1,0 +1,765 @@
+@charset "utf-8";
+/* 
+    Document   : style
+    Created on : Sep 13, 2012, 4:24:03 PM
+    Author     : Manellen,Andika
+    Description:
+        Purpose of the stylesheet follows.
+
+    Simple fluid media
+    Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+    http://www.alistapart.com/articles/fluid-images/ 
+*/
+
+root {
+    display: block;
+}
+
+@font-face {
+    font-family: 'Coda Caption';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Coda Caption Heavy'), local('CodaCaption-Heavy'), url(../fonts/YDl6urZh-DUFhiMBTgAnz2pVmE9oLybi4D_AN-2K110.woff) format('woff');
+}
+
+img, object, embed, video {
+    max-width: 100%;
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+    width: 100%;
+}
+
+body {
+    font-family: 'Coda Caption', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    text-align: justify;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Coda Caption', sans-serif;
+    color: #8f3f63;
+}
+
+p, a, label {
+    font-family: Verdana, sans-serif;
+    font-size: 14px;
+    color: #544F3A;
+}
+
+/*
+        Dreamweaver Fluid Grid Properties
+        ----------------------------------
+        dw-num-cols-mobile:		5;
+        dw-num-cols-tablet:		8;
+        dw-num-cols-desktop:	12;
+        dw-gutter-percentage:	15;
+        
+        Inspiration from "Responsive Web Design" by Ethan Marcotte 
+        http://www.alistapart.com/articles/responsive-web-design
+        
+        and Golden Grid System by Joni Korpi
+        http://goldengridsystem.com/
+*/
+
+/* Mobile Layout: 480px and below. */
+
+.gridContainer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 88.626%;
+    padding-left: 1.1869%;
+    padding-right: 1.1869%;
+    background-color:#FFF;
+}
+#LayoutDiv1 {
+    clear: both;
+    float: left;
+    margin-left: 0;
+    width: 100%;
+    display: block;
+}
+#container {
+    clear: both;
+    float: left;
+    margin-left: 0;
+    width: 100%;
+    display: block;
+}
+img{
+    display: none;
+}
+#slider {
+    display: none;
+}
+#head {
+    clear: both;
+    float: left;
+    margin-left: 0;
+    width: 100%;
+    display: block;
+}
+#body {
+    clear: both;
+    float: left;
+    margin-left: 0;
+    width: 100%;
+    display: block;
+}
+#footer {
+    clear: both;
+    float: left;
+    margin:auto;
+    width: 96%;
+    display: block;
+    background: #0d0b06 repeat;
+    padding: 2%;
+    text-align:center;
+}
+#footer a {
+    color: #acc2cc;
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+}
+#footer a:hover {
+    color: #fff;
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+}
+#footer p.copyright {
+    color: #fff;
+    font-family: Verdana, sans-serif;
+    font-size: 12px;
+}
+#footer #menu-footer {
+    clear:both;
+    color: #acc2cc;
+    font-family: Verdana, sans-serif;
+    font-size: 10px;
+    text-decoration: none;/*        margin-left: -40px;*/
+}
+#footer #menu-footer ul {
+    color: #acc2cc;
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+#footer #menu-footer ul li {
+    color: #acc2cc;
+    display: inline;
+    margin: 0 5px 0 0;
+    font-weight: bold;
+}
+#footer #lang {
+    float:none;
+    color: #acc2cc;
+    text-align:center;
+    margin:auto
+}
+#footer #lang p {
+    display:none;
+}
+#footer #lang img {
+    display:block;
+    margin:0;
+    padding:0;
+}
+#footer #lang ul {
+    margin: 0;
+    padding: 0;
+}
+#footer #lang ul li {
+    display: inline-table;
+    text-decoration: none;
+    padding: 0 2px;
+}
+#content {
+    clear: both;
+    float: left;
+    margin-left: 0;
+    width: 96%;
+    display: block;
+    background: url('../images/rbg.jpg') repeat;
+    display: block;
+    color: #544F3A;
+    text-align:left;
+    padding:2%;
+}
+#content h4 {
+    font-family: Verdana, sans-serif;
+    color: #2f2d29;
+}
+#content p {
+    font-family: Verdana, sans-serif;
+    color: #544f3a;
+}
+#content a {
+    color: #6b621a;
+}
+#content a:hover {
+    color: #8f3f63;
+}
+#content img{
+    display: block;
+    /*margin:auto;*/
+}
+#column1 {
+    clear: none;
+    float: left;
+    /*margin-left: 2.6785%;*/
+    width: 100%;
+    display: block;
+    /*border-bottom:5px solid #fff;*/
+    padding:25px 0px;
+}
+#column2 {
+    clear: none;
+    float: left;
+    /*margin-left: 2.6785%;*/
+    width: 100%;
+    display: block;
+    /*border-bottom:5px solid #fff;*/
+    padding:25px 0px;
+}
+#column3 {
+    clear: none;
+    float: left;
+    /*margin-left: 2.6785%;*/
+    width: 100%;
+    display: block;
+    padding:25px 0px;
+    text-align:center;
+}
+#nav {
+    clear: both;
+    float: left;
+    margin-left: 0;
+    width: 100%;
+    display: block;
+    background-color:#e8eace;
+    text-align:center;
+}
+#nav ul {
+    list-style-type:none;
+    margin:0;
+    padding:0;	
+}
+#nav ul li {
+    border-bottom:1px solid silver;
+    background-color:#e8eace;
+    letter-spacing:2px;
+}
+#nav ul li.selected {
+    color:#993064;
+}
+#nav ul li.selected a {
+    color:#993064;
+}
+#nav ul li a {
+    color:#565656;
+    text-decoration:none;
+}
+#nav ul li a:hover {
+    color:#993064;
+    text-decoration:underline;
+}
+#wrap {
+    clear: both;
+    float: left;
+    margin-left: 0;
+    width: 100%;
+    display: block;
+}
+#slogan {
+    clear: both;
+    float: left;
+    margin-left: 0;
+    width: 100%;
+    display: block;
+    background: url('../images/rbg.jpg') repeat;
+    text-align:center;
+}
+#slogan h1{
+    font-size: 24px;
+}
+
+
+
+
+
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+    .gridContainer {
+        width: 91.4836%;
+        padding-left: 0.7581%;
+        padding-right: 0.7581%;
+    }
+    #LayoutDiv1 {
+        clear: both;
+        float: left;
+        margin-left: 0;
+        width: 100%;
+        display: block;
+    }
+    #container {
+        clear: both;
+        float: left;
+        margin-left: 0;
+        width: 100%;
+        display: block;
+    }
+    #head {
+        clear: both;
+        float: left;
+        margin-left: 0;
+        width: 100%;
+        display: block;
+    }
+    #body {
+        clear: both;
+        float: left;
+        margin-left: 0;
+        width: 100%;
+        display: block;
+    }
+    #footer {
+        clear: both;
+        float: left;
+        margin-left: 0;
+        width: 96%;
+        display: block;
+    }
+    #content {
+        clear: both;
+        float: left;
+        margin-left: 0;
+        width: 96%;
+        display: block;
+        margin:auto;
+    }
+    #column1 {
+        clear: none;
+        float: left;
+        margin-left: 0;
+        width: 45%;
+        display: block;
+        padding: 0 2%;
+    }
+    #column2 {
+        clear: none;
+        float: left;
+        margin-left: 0;
+        width: 45%;
+        display: block;
+        padding: 0 2%;
+    }
+    #column3 {
+        clear: none;
+        float: left;
+        margin-left: 0;
+        width: 100%;
+        display: block;
+    }
+    #nav {
+        clear: both;
+        float: left;
+        margin-left: 0;
+        width: 100%;
+        display: block;
+    }
+    #wrap {
+        clear: both;
+        float: left;
+        margin-left: 0;
+        width: 100%;
+        display: block;
+    }
+    #slogan {
+        clear: both;
+        float: left;
+        margin-left: 0;
+        width: 100%;
+        display: block;
+    }
+}
+
+
+
+
+
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+    #wrap {
+        clear: both;
+        float: left;
+        margin-left: 0;
+        width: 100%;
+        display: block;
+        background: url('../images/_wrap.jpg') repeat-x top;/*background: url('../images/wrap.jpg') repeat top;*//*height: 335px;*/
+    }
+    .gridContainer {
+        width: 89.0217%;
+        /*max-width: 1232px;*/
+        max-width: 1299px;
+        /*
+        padding-left: 0.4891%;
+        padding-right: 0.4891%;
+        */
+        padding-left: 0%;
+        padding-right: 0%;
+        margin: auto;
+    }
+    #LayoutDiv1 {
+        clear: both;
+        float: left;
+        margin-left: 0;
+        width: 100%;
+        display: block;
+    }
+    #container {
+        clear: both;
+        float: left;
+        margin-left: 0;
+        width: 100%;
+        display: block;
+        background: url('../images/bg-home.jpg') no-repeat;
+        background-position: center top;
+        height: 741px;
+    }
+    /*---------- Start Logo ----------*/
+    #logo {
+        position: absolute;
+        top: 38px; /*38px;*/
+        left: 516px;
+/*        background-color: red;*/
+    }
+    #logo:hover {
+        background: url('../images/logo.png') bottom;
+        display: block;
+        width: 174px;
+        height: 51px;
+    }
+    /*---------- End Logo ----------*/
+    #head {
+        clear: both;
+        float: left;
+        width: 100%;
+        display: block;
+        height: 16%;
+        margin-top: 47.95%;
+/*        background-color: yellow;*/
+    }
+    #body {
+        clear: both;
+        float: none;
+        width: 72%;
+        display: block;
+        background-color: #ccc;
+        margin: auto;
+        background: url('../images/rbg.jpg') repeat;
+    }
+    #pfooter{
+        clear:both;
+        float:none;
+        margin:auto;
+        background: url('../images/miring.jpg') no-repeat;
+        width: 938px;
+        height: 20px;
+        display: block;
+    }
+    #footer {
+        clear: both;
+        float: none;
+        margin: auto;
+        /*width: 72%;*/
+        width: 70%;
+        display: block;
+        background: #0d0b06 repeat;
+        padding: 1%;
+        color: #fff;
+        text-align:justify;
+        padding: 10px;
+        width: 918px;
+        position:relative;
+    }
+    #footer a {
+        color: #acc2cc;
+        font-family: Verdana, sans-serif;
+        font-size: 12px;
+    }
+    #footer a:hover {
+        color: #fff;
+        font-family: Verdana, sans-serif;
+        font-size: 12px;
+    }
+    #footer p.copyright {
+        color: #fff;
+        font-family: Verdana, sans-serif;
+        font-size: 12px;
+    }
+    #footer #menu-footer {
+        color: #acc2cc;
+        font-family: Verdana, sans-serif;
+        font-size: 10px;
+        text-decoration: none;/*        margin-left: -40px;*/
+    }
+    #footer #menu-footer ul {
+        color: #acc2cc;
+        list-style: none;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+    #footer #menu-footer ul li {
+        color: #acc2cc;
+        display: inline;
+        margin : 0 5px 0 0;
+        font-weight: bold;
+    }
+    #footer #lang {
+        position: absolute;
+        right : 0;
+        padding: 10px;
+    }
+    #footer #lang p {
+        display:inline;
+        color: #acc2cc;
+    }
+    #footer #lang img {
+        display:inline-block;
+        /*margin:0;
+        padding:0;*/
+    }
+    #footer #lang ul {
+        margin: 0;
+        padding: 0;
+    }
+    #footer #lang ul li {
+        color: #acc2cc;
+        display: inline;
+        text-decoration: none;
+        font-family: Verdana, sans-serif;
+        font-size: 12px;
+        padding: 0 2px;
+        height: 20px;
+        vertical-align: middle;
+    }
+    #content {
+        margin: 0 auto;
+        clear: both;
+        float: left;
+        width: 100%;
+        background: url('../images/rbg.jpg') repeat;
+        display: block;
+        color: #544F3A;
+        padding:0%;
+    }
+    #content h4 {
+        font-family: Verdana, sans-serif;
+        color: #2f2d29;
+    }
+    #content p {
+        font-family: Verdana, sans-serif;
+        color: #544f3a;
+    }
+    #content a {
+        color: #6b621a;
+    }
+    #content a:hover {
+        color: #8f3f63;
+    }
+    #column1 {
+        clear: both;
+        float: left;
+        margin-left: 1.2%;
+        /*width: 32.6007%;*/
+        display: block;
+        /*padding: 3%;*/
+        width: 30.6007%;
+        padding-top: 0%;
+        padding-left: 0%;
+        padding-bottom: 3%;
+    }
+    #column2 {
+        clear: none;
+        float: left;
+        margin-left: 0%;
+        /*width: 32.6007%;*/
+        display: block;
+        width: 28.6007%;
+        padding-top: 0%;
+        padding-left: 0%;
+        padding-bottom: 3%;
+    }
+    #column3 {
+        clear: none;
+        float: left;
+        margin-left: 0%;
+        /*width: 32.6007%;*/
+        width: 35.6007%;
+        display: block;
+        padding: 0%;
+        background: url('../images/social-network.jpg') no-repeat;
+        height: 160px;
+        margin-top: 70px;
+    }
+    #column3 #col3-title {
+        margin-left: 50px;
+        margin-top: 30px;
+        text-align: center;
+    }
+    #column3 #col3-title h3 {
+        /*            color: #eaedd3;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        filter: progid:DXImageTransform.Microsoft.Shadow(direction=135,strength=2,color=000000);*/
+        color: #8f3f63;
+    }
+    #column3 #col3-title a {
+        color: #544f3a;
+        text-decoration: none;
+    }
+    #column3 #col3-title a:hover {
+        color: #8f3f63;
+        text-decoration: none;
+    }
+    #nav {
+        clear: both;
+        float: left;
+        margin-left: 0;
+        width: 100%;
+        display: block;
+        background-color:transparent;
+        text-align:justify;
+    }
+    #nav ul {
+        position: absolute;
+        top: 42px;
+        right: 487px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        padding: 10px 5px 5px 5px;
+    }
+    #nav ul li {
+        display: inline;
+        width: 6em;
+        margin : 0;
+        padding: 11px 5px 5px 15px;
+        background: url('../images/nav_bg.png') repeat-x 0 0;
+        letter-spacing:0px;
+        border-bottom:none;
+    }
+    #nav ul li.selected {
+        background: url('../images/nav_selected.png') repeat-x 0 0;
+    }
+    #nav ul li.selected a {
+        color: #993064;
+    }
+    #nav ul li a {
+        text-decoration: none;
+        color: #565656;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    #nav ul li a:hover {
+        text-decoration: none;
+        color: #993064;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    #slogan {
+        clear: both;
+        float: left;
+        margin-left: 0;
+        width: 100%;
+        display: block;
+        /*
+        letter-spacing: 4px;
+        position: absolute;
+        top: 632px;
+        */
+        left: 0;
+        color: #8f3f63;
+        /* Safari */
+        -webkit-transform: rotate(-0.5deg);
+        /* Firefox */
+        -moz-transform: rotate(-0.5deg);
+        /* IE */
+        -ms-transform: rotate(-0.5deg);
+        /* Opera */
+        -o-transform: rotate(-0.5deg);
+        /*         Internet Explorer 
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=4);*/
+        text-align: center;
+        background:none;
+/*        background-color: green;*/
+    }
+    #slogan h1{
+        font-size: 2em;
+    }
+    #clear-slider {
+        clear: both;
+        margin-top: 35px;
+    }
+    #slider {
+        background-color: #a1a19b;
+        width: 890px;
+        height: 424px;
+        padding: 5px;
+        text-align: center;
+        margin: 0 auto;
+        position: absolute;
+        left: 501px;
+        top: 128px;
+    }
+    #container img{
+        display: block;
+    }
+    #slider {
+        display: block;
+    }
+    
+/*    Start Side Home Ads1*/
+    #sideAds-home1{
+        float: left;
+        width: 155px;
+        height: 800px;
+        background-color: red;
+    }
+/*    End Side Home Ads1*/
+
+/*    Start Side home Ads2*/
+    #sideAds-home2{
+        float: left;
+        width: 155px;
+        height: 800px;
+        background-color: green;
+    }
+/*    End Side Home Ads2*/
+
+/*    Start Side home Ads3*/
+    #sideAds-home3{
+        float: left;
+        width: 155px;
+        height: 800px;
+        background-color: yellow;
+    }
+/*    End Side Home Ads3*/
+
+/*    Start Side home Ads4*/
+    #sideAds-home4{
+        float: left;
+        width: 155px;
+        height: 800px;
+        background-color: blue;
+    }
+/*    End Side Home Ads4*/
+}

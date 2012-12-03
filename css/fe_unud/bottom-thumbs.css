@@ -1,0 +1,26 @@
+#news div.navigation-container {
+	float: left;
+	position: relative;
+	left: 50%;
+	margin-top: 20px;
+}
+#news div.navigation {
+	float: left;
+	position: relative;
+	left: -50%;
+}
+#news div.pagination {
+	clear: both;
+	position: relative;
+	left: -50%;
+}
+#news div.photo-index {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 0 12px;
+}
+#news div.slideshow-container,
+#news div.caption-container {
+	float: left;
+}

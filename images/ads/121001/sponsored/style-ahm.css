@@ -1,0 +1,61 @@
+/* 
+    Document   : style-ahm
+    Created on : Oct 8, 2012, 3:57:05 PM
+    Author     : Manellen
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+body {
+	margin:0;
+	padding:0;
+	font:normal 14px Arial, Helvetica, sans-serif;
+	color:#000;
+	background:#3e0f01 url('bg-body.jpg') 49% 0% no-repeat;
+	___background:#3e0f01 url('bg-body.jpg') 50% 0% no-repeat;
+	line-height:24px;
+}
+
+h1 {
+	color:#db1f1f;
+	font-size:33px;
+	margin:0px 0 20px 0;
+	line-height:36px;
+}
+h2 {
+	color:#000;
+	font-size:18px;
+	margin:0px 0 0px 0;
+	line-height:36px;
+}
+.header {
+	width:980px;
+	margin:0 auto;
+}
+.linklogo {
+	width:155px;
+	height:153px;
+	display:block;
+	margin-left:25px;
+	position:absolute;
+}
+p {
+	padding:15px 0 ;
+	margin:0;
+}
+.wrapper {
+	width:980px;
+	margin:0 auto;
+	background:#fff url('bg-content.jpg') 0% 0% no-repeat;
+	clear:both;
+	overflow:hidden;
+	padding-top:290px;
+}
+.content {
+	width:800px;
+	margin:0 auto;
+	background:none;
+}
