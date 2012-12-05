@@ -8,22 +8,18 @@ require_once APPPATH . "helpers/ads_service.php";
     <head>
         <title><?php ?></title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="<?php echo base_url(); ?>css/boilerplate.css" type="text/css">
-        <link rel="stylesheet" href="<?php echo base_url(); ?>css/gaya.css" type="text/css">
-        <link rel="stylesheet" href="<?php echo base_url(); ?>css/skitter.styles.css" media="all" type="text/css" />
-        <link rel="stylesheet" href="<?php echo base_url(); ?>css/galleria.classic.css" type="text/css">
-
-        <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery-1.5.2.min.js" ></script>
-        <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.skitter.min.js" ></script>
-
-
-        <script type="text/javascript" src="<?php echo base_url(); ?>js/galleria-1.2.8.min.js" ></script>
-        <script type="text/javascript" src="<?php echo base_url(); ?>js/galleria.classic.js" ></script>
-        <script type="text/javascript" src="<?php echo base_url(); ?>js/galleria.classic.min.js" ></script>
-        <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.animate-colors-min.js" ></script>
-        <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery.easing.1.3.js" ></script>
-        <script type="text/javascript" src="<?php echo base_url(); ?>js/respond.min.js" ></script>
-
+        <link rel="stylesheet" href="<?php echo base_url('css/boilerplate.css'); ?>" type="text/css">
+        <link rel="stylesheet" href="<?php echo base_url('css/gaya.css'); ?>" type="text/css">
+        <link rel="stylesheet" href="<?php echo base_url('css/skitter.styles.css'); ?>" media="all" type="text/css" />
+       
+        <script type="text/javascript" src="<?php echo base_url('js/jquery-1.5.2.min.js'); ?>" ></script>
+        <script type="text/javascript" src="<?php echo base_url('js/jquery.form.js'); ?>" ></script>
+        <script type="text/javascript" src="<?php echo base_url('js/ajaxfileupload.js'); ?>" ></script>
+        <script type="text/javascript" src="<?php echo base_url('js/jquery.skitter.min.js'); ?>" ></script>
+        <script type="text/javascript" src="<?php echo base_url('js/jquery.animate-colors-min.js'); ?>" ></script>
+        <script type="text/javascript" src="<?php echo base_url('js/jquery.easing.1.3.js'); ?>" ></script>
+        <script type="text/javascript" src="<?php echo base_url('js/respond.min.js'); ?>" ></script>
+      
         <script>
             $(function(){
                 $('.box_skitter_large').skitter();
@@ -115,7 +111,7 @@ require_once APPPATH . "helpers/ads_service.php";
             #mask { position:absolute; left:0; top:0; z-index:9000; background-color:#000; display:none; margin: 0 auto; }
             #boxes .window { position:fixed; width:440px; height:200px; display:none; z-index:9999; /*padding:20px;*/ margin: 0 auto; }
             #boxes #dialog1 { /*width:375px; height:203px;*/  }
-            #dialog1 .d-header { background:url('<?php echo base_url(); ?>ads/121001/popup/popup.jpg') no-repeat 0 0 transparent; width:600px; height:400px; }
+            #dialog1 .d-header { background:url('<?php echo base_url('ads/121001/popup/popup.jpg'); ?>') no-repeat 0 0 transparent; width:600px; height:400px; }
             .close img{ display: block; }
         </style>
     </head>
@@ -156,18 +152,16 @@ require_once APPPATH . "helpers/ads_service.php";
                                 <ul>
                                     <li><?php get_ads(ADS_TYPE_SPONSORED, "121119"); ?></li>
                                     <li><a href="http://www.lightningdigitalsignage.com" title="LDS Official Website"><img src="<?php echo base_url(); ?>images/intro.jpg" class="block" /></a><div class="label_text"></div></li>
-                                    <li><a href="http://www.lightningdigitalsignage.com" title="Advertise right now and meet your business goals with 3000 estimation people per day"><img src="<?php echo base_url(); ?>images/airport.jpg" class="cube" /></a><div class="label_text"></div></li>
-                                    <li><a href="http://www.lightningdigitalsignage.com" title="Advertise right now and meet your business goals with 1000 estimation people per day"><img src="<?php echo base_url(); ?>images/gp.jpg" class="default" /></a><div class="label_text"></div></li>
-                                    <li><a href="http://www.lightningdigitalsignage.com" title="Advertise right now and meet your business goals with 1000 estimation people per day"><img src="<?php echo base_url(); ?>images/feunud.jpg" class="block" /></a><div class="label_text"></div></li>
-                                    <li><a href="http://www.lightningdigitalsignage.com" title="Advertise right now and meet your business goals with 1000 estimation people per day"><img src="<?php echo base_url(); ?>images/bc.jpg" class="cube" /></a><div class="label_text"></div></li>
+                                    <li><a href="http://www.lightningdigitalsignage.com" title="Advertise right now and meet your business goals with 3000 estimation people per day"><img src="<?php echo base_url('images/airport.jpg'); ?>" class="cube" /></a><div class="label_text"></div></li>
+                                    <li><a href="http://www.lightningdigitalsignage.com" title="Advertise right now and meet your business goals with 1000 estimation people per day"><img src="<?php echo base_url('images/gp.jpg'); ?>" class="default" /></a><div class="label_text"></div></li>
+                                    <li><a href="http://www.lightningdigitalsignage.com" title="Advertise right now and meet your business goals with 1000 estimation people per day"><img src="<?php echo base_url('images/feunud.jpg'); ?>" class="block" /></a><div class="label_text"></div></li>
+                                    <li><a href="http://www.lightningdigitalsignage.com" title="Advertise right now and meet your business goals with 1000 estimation people per day"><img src="<?php echo base_url('images/bc.jpg'); ?>" class="cube" /></a><div class="label_text"></div></li>
                                 </ul>
                             </div>
                             <div id="slogan">
-                                <h1></h1>
+                                <h1>Advertising paperless technology, save our trees</h1>
                             </div>    
                         </div>
-
-
 
                         <div id="content">
                             <?php echo $body; ?>

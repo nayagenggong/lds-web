@@ -21,6 +21,13 @@ class Page_model extends CI_Model {
         return $this->db->get()->result();
     }
 
+    function get_by_title($title)
+    {
+        $this->db->from($this->table);
+        $this->db->where('title', $title);
+        return $this->db->get()->row();
+    }
+
 }
 
 ?>
